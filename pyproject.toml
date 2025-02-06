@@ -1,0 +1,24 @@
+[project]
+name = "fraud-detect"
+version = "0.1.0"
+description = "Add your description here"
+requires-python = ">=3.12"
+dependencies = [
+    "data-connector",
+    "fraud-ml",
+    "fastapi[standard]>=0.115.8",
+]
+
+[tool.uv.sources]
+data-connector = { workspace = true }
+fraud-ml = { workspace = true }
+
+
+[tool.uv.workspace]
+members = ["packages/*", "workflows/*"]
+
+[dependency-groups]
+dev = [
+    "black>=25.1.0",
+    "ruff>=0.9.4",
+]
