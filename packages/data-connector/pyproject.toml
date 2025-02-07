@@ -1,0 +1,17 @@
+[project]
+name = "data-connector"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Avik Basu", email = "ab93@users.noreply.github.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "boto3>=1.36.14",
+    "pandas>=2.2.3",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"

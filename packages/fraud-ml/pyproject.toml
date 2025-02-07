@@ -1,0 +1,19 @@
+[project]
+name = "fraud-ml"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Avik Basu", email = "ab93@users.noreply.github.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "numpy>=2.2.2",
+    "pandas>=2.2.3",
+    "scikit-learn>=1.6.1",
+    "scipy>=1.15.1",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
