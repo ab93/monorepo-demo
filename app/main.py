@@ -1,7 +1,7 @@
 import numpy as np
 from fastapi import FastAPI
 
-from data_connector import ModelLoader
+from data_connector import ModelManager
 from fraud_ml.model import FraudModel
 from app.internal.rmodels import PredictionResponse, TransactionData
 
@@ -21,7 +21,7 @@ def detect(transaction: TransactionData):
     )
 
     # Load and get predictions from model
-    loader = ModelLoader("some/path/to/model")
+    loader = ModelManager("some/path/to/model")
     weights = loader.load_model_weights("fraud_model", "v1")
     model = FraudModel.from_weights(weights)
     y = model.predict(x)
