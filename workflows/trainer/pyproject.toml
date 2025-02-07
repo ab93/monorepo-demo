@@ -1,0 +1,15 @@
+[project]
+name = "trainer"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "data-connector",
+    "fraud-ml",
+    "jupyter>=1.1.1",
+]
+
+[tool.uv.sources]
+fraud-ml = { workspace = true }
+data-connector = { workspace = true }
