@@ -14,15 +14,19 @@ Sample library containing model architectures, training, and evaluation code.
 ### data-connector
 Sample library containing tools to connect to external data sources.
 
-## Explorations/Workflows
+## Workflows
 The **workflows** directory contains the workflows used in the project
 
-### trainer
-Sample project containing runnable notebooks for training a model locally or inside a cluster.
+### batch-proc
+Sample project containing runnable notebooks for batch training or batch inference locally or inside a cluster.
 It uses the **fraud-ml** library for model training and evaluation, and the **data-connector**
 library for fetching historical data.
 
-## Service
+## Experiments
+The **experiments** directory contains the experiments used in the project, e.g. 
+testing out different model architectures.
+
+## Application/Service
 The **app** directory contains a FastAPI service for serving the model and exposing an API.
 It uses the **fraud-ml** library for model inference, and the **data-connector** 
 library for model loading.
