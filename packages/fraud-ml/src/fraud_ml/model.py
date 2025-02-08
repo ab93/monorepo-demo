@@ -1,10 +1,11 @@
-from typing import Any
+from typing import Any, Self
 
 import numpy as np
 import numpy.typing as npt
 
 
 class FraudModel:
+    """Dummy ML Model for Fraud Detection."""
     def __init__(self):
         self._model = None
         self._weights = None
@@ -18,6 +19,6 @@ class FraudModel:
         return np.random.choice([0, 1], x.shape[0])
 
     @classmethod
-    def from_weights(cls, _: dict[str, Any]):
+    def from_weights(cls, _: dict[str, Any]) -> Self:
         """Simulate loading model weights"""
         return cls()
