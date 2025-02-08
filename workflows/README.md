@@ -1,6 +1,6 @@
 ## workflows
 This directory contains the workflows used in the project, e.g. for training models 
-inside a cluster or for running adhoc-analysis on massive datasets.
+inside a cluster as a batch job.
 
-### trainer
-Sample notebook for training a model locally or inside a cluster.
+### batch-proc
+Contains notebooks and scripts for running batch jobs in a cluster.

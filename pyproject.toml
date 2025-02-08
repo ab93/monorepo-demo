@@ -15,7 +15,7 @@ fraud-ml = { workspace = true }
 
 
 [tool.uv.workspace]
-members = ["packages/*", "workflows/*"]
+members = ["packages/*", "workflows/*", "experiments"]
 
 [dependency-groups]
 dev = [
