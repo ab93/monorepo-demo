@@ -6,6 +6,7 @@ import numpy.typing as npt
 
 class FraudModel:
     """Dummy ML Model for Fraud Detection."""
+
     def __init__(self):
         self._model = None
         self._weights = None

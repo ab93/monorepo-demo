@@ -1,6 +1,23 @@
 ## batchproc
 Project for batch processing jobs
 
+      +-------------+
+      | fraud-ml |
+      +-------------+
+             \
+              \
+               \
+      +------------------+
+      |   batch-proc  |
+      +------------------+
+               /
+              /
+             /
+      +-----------------+
+      | data-connector |
+      +-----------------+
+
+
 ### train.ipynb
 - Load data using data-connector 
 - Batch training job of model using fraud-ml

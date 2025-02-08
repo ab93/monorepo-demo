@@ -14,7 +14,9 @@ class DummyDataFetcher:
         # Simulating database query with a dummy dataframe
         x_dummy = pd.DataFrame(
             np.random.randn(num_rows, 3),
-            columns=["amount", "merchant_score", "risk_level"]
+            columns=["amount", "merchant_score", "risk_level"],
         )
-        y_dummy = pd.Series(np.random.randint(0, 2, size=num_rows), name="is_fraudulent")
+        y_dummy = pd.Series(
+            np.random.randint(0, 2, size=num_rows), name="is_fraudulent"
+        )
         return x_dummy, y_dummy

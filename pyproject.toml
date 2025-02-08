@@ -19,6 +19,6 @@ members = ["packages/*", "workflows/*", "experiments"]
 
 [dependency-groups]
 dev = [
-    "black>=25.1.0",
+    "black[jupyter]>=25.1.0",
     "ruff>=0.9.4",
 ]

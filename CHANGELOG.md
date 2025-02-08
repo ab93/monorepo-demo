@@ -16,12 +16,10 @@ All releases are versioned together.
 
 ### Features
 - **fraud-ml:** Added a new ML model
-- **data-connector:** Introduced data fetching
-- **fraud-detect:** Working example of service
+- **fraud-detect app:** Working example of service
 
 ### Changed
-- **data-connector:** Allow for model loading using weights
-- **application:** Improved refactoring of modules.
+- **fraud-detect app:** Improved refactoring of modules.
 
 ### Fixes
 - **fraud-ml:** Add type hints
@@ -32,7 +30,7 @@ All releases are versioned together.
 
 ### Features
 - **fraud-ml:** Initial release with structure.
-- **data-connector:** Initial release with core utility functions.
+- **data-connector:** Introduced data fetching
 - **fraud-detect:** First release, featuring integration with 
 fraud-ml and data-connector.
 

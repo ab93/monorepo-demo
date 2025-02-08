@@ -22,13 +22,69 @@ Sample project containing runnable notebooks for batch training or batch inferen
 It uses the **fraud-ml** library for model training and evaluation, and the **data-connector**
 library for fetching historical data.
 
+      +-------------+
+      | fraud-ml |
+      +-------------+
+             \
+              \
+               \
+      +------------------+
+      |   batch-proc  |
+      +------------------+
+               /
+              /
+             /
+      +-----------------+
+      | data-connector |
+      +-----------------+
+
+
 ## Experiments
 The **experiments** directory contains the experiments used in the project, e.g. 
 testing out different model architectures.
+
+
+      +-------------+
+      | fraud-ml |
+      +-------------+
+             \
+              \
+               \
+      +------------------+
+      |   experiments  |
+      +------------------+
+               /
+              /
+             /
+      +-----------------+
+      | data-connector |
+      +-----------------+
+
 
 ## Application/Service
 The **app** directory contains a FastAPI service for serving the model and exposing an API.
 It uses the **fraud-ml** library for model inference, and the **data-connector** 
 library for model loading.
+
+      +-------------+
+      | fraud-ml |
+      +-------------+
+             \
+              \
+               \
+      +-----------------------+
+      |   fraud-detect app  |
+      +-----------------------+
+               /
+              /
+             /
+      +-----------------+
+      | data-connector |
+      +-----------------+
+
+
+
+
+
 
 

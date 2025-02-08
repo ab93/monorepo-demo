@@ -5,3 +5,7 @@ clean:
 	@find . -type d -name '__pycache__' -exec rm -rf {} +
 	@find . -type d -name '*pytest_cache*' -exec rm -rf {} +
 	@find . -type f -name "*.py[co]" -exec rm -rf {} +
+
+lint:
+	uvx black .
+	uvx ruff check --fix .
