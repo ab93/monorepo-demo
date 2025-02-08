@@ -11,7 +11,7 @@ class FraudModel:
         self._model = None
         self._weights = None
 
-    def fit(self, _x: npt.NDArray[np.float64], _y: npt.NDArray[np.float64]):
+    def fit(self, _x: npt.NDArray[np.float64], _y: npt.NDArray[np.float64]) -> Self:
         """Simulate model training"""
         return self
 

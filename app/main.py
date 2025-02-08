@@ -9,12 +9,29 @@ app = FastAPI()
 
 
 @app.get("/health")
-def health_check():
+def health_check() -> dict[str, str]:
+    """Check if the server is running."""
     return {"status": "Server is running"}
 
 
 @app.post("/detect", response_model=PredictionResponse)
-def detect(transaction: TransactionData):
+def detect(transaction: TransactionData) -> PredictionResponse:
+    """
+    Detect fraudulent transactions using a trained
+    dummy ML model.
+
+    Parameters
+    ----------
+    transaction : TransactionData
+        Transaction data to be used for prediction.
+
+    Returns
+    -------
+    PredictionResponse
+        Prediction response containing the transaction ID
+        and whether the transaction is fraudulent.
+    """
+
     # Convert input data to numpy array for model
     x = np.array(
         [transaction.amount, transaction.merchant_score, transaction.risk_level]
